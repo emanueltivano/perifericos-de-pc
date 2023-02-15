@@ -6,8 +6,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import CartWidget from './CartWidget';
+import { NavLink } from "react-router-dom";
 
-function NavBar() {
+export default function NavBar() {
     return (
         <Navbar bg="primary" variant="dark" sticky>
             <Container>
@@ -20,7 +21,7 @@ function NavBar() {
                             <line x1="9" y1="16" x2="9" y2="20" />
                             <line x1="15" y1="16" x2="15" y2="20" />
                         </svg>
-                        <Navbar.Brand href="#home">Perifericos de PC</Navbar.Brand>
+                        <NavLink to={'/'}>Perifericos de PC</NavLink>
                     </Col>
 
                     <Col xs={6}>
@@ -53,11 +54,11 @@ function NavBar() {
 
                     <Col xs={6}>
                         <Nav className='me-auto'>
-                            <Nav.Link href="#home" active>Inicio</Nav.Link>
-                            <Nav.Link href="#features">Monitores</Nav.Link>
-                            <Nav.Link href="#pricing">Teclados</Nav.Link>
-                            <Nav.Link href="#pricing">Mouses</Nav.Link>
-                            <Nav.Link href="#pricing">Auriculares</Nav.Link>
+                            <NavLink to={'/'}>Inicio</NavLink>
+                            <NavLink to={`/category/monitores`}>Monitores</NavLink>
+                            <NavLink to={'/category/teclados'}>Teclados</NavLink>
+                            <NavLink to={'/category/mouses'}>Mouses</NavLink>
+                            <NavLink to={'/category/auriculares'}>Auriculares</NavLink>
                         </Nav>
                     </Col>
 
@@ -68,5 +69,3 @@ function NavBar() {
         </Navbar>
     );
 }
-
-export default NavBar;

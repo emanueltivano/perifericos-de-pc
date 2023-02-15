@@ -1,0 +1,78 @@
+{ 
+    "monitores":  [
+        {
+            "id": 100,
+            "name": "Monitor Samsung F24T35",
+            "price": 57599,
+            "rate": 4.8,
+            "freeShipping": true,
+            "opinions": 3216,
+            "size": 24,
+            "resolution": "1920px-1080px"
+        },
+        {
+            "id": 101,
+            "name": "Monitor Philips V 221V8",
+            "price": 46999,
+            "rate": 4.7,
+            "freeShipping": true,
+            "opinions": 147,
+            "size": 21.5,
+            "resolution": "1920px-1080px"
+        }
+    ],
+    "teclados":  [
+        {
+            "id": 200,
+            "name": "Teclado HyperX Alloy Origins 60",
+            "price": 16890,
+            "rate": 4.9,
+            "freeShipping": true,
+            "opinions": 147
+        },
+        {
+            "id": 201,
+            "name": "Teclado Razer Huntsman Min",
+            "price": 30000,
+            "rate": 4.7,
+            "freeShipping": true,
+            "opinions": 166
+        }
+    ],
+    "mouses":  [
+        {
+            "id": 300,
+            "name": "Mouse Logitech G Series G502",
+            "price": 16000,
+            "rate": 4.9,
+            "freeShipping": true,
+            "opinions": 147
+        },
+        {
+            "id": 301,
+            "name": "Mouse Logitech G Series Lightsync G203",
+            "price": 7900,
+            "rate": 4.7,
+            "freeShipping": true,
+            "opinions": 166
+        }
+    ],
+    "auriculares":  [
+        {
+            "id": 400,
+            "name": "Auricular HyperX Wireless",
+            "price": 22000,
+            "rate": 4.9,
+            "freeShipping": true,
+            "opinions": 147
+        },
+        {
+            "id": 401,
+            "name": "Auricular Razer Huntsman Min",
+            "price": 30000,
+            "rate": 4.7,
+            "freeShipping": true,
+            "opinions": 166
+        }
+    ]
+}
