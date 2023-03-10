@@ -1,19 +1,23 @@
 import React from 'react';
 import Badge from 'react-bootstrap/Badge';
+import { Link } from 'react-router-dom';
+import { CartContext } from './CartContext';
+import { useContext } from 'react';
+import { ReactComponent as CartIcon } from '../Assets/Icons/CartIcon.svg';
 
 function CartWidget() {
+    const [cart] = useContext(CartContext);
     return (
-        <div className='cart-widget'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" strokeWidth="1.75" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <circle cx="6" cy="19" r="2" />
-                <circle cx="17" cy="19" r="2" />
-                <path d="M17 17h-11v-14h-2" />
-                <path d="M6 5l14 1l-1 7h-13" />
-            </svg>
+        <Link to={'/cart'}>
+            <button className='navbar-button'>
+                <div className='cart-widget'>
+                    <CartIcon width="30" height="30" stroke="#ffffff" />
 
-            <Badge pill bg="danger">1</Badge>
-        </div>
+                    <Badge pill bg="danger">{cart.quantity}</Badge>
+                </div>
+                Carrito
+            </button>
+        </Link>
     );
 }
 
